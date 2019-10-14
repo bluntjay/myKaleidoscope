@@ -1,0 +1,48 @@
+html, body {
+	background-color: #260033;
+}
+
+@keyframes showInfo{
+	0%
+	{
+		transform: rotateY(120deg);
+	}
+	25%{
+		transform: rotateY(90deg);
+	}
+	50%{
+		transform: rotateY(60deg);
+	}
+	75%{
+		transform: rotateY(30deg);
+	}
+	100%
+	{
+		transform: rotateY(0deg);
+	}
+}
+
+#info{
+	transition:  all 180ms ease-out; 
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+	font-family: "Arial Black", Gadget, sans-serif;
+	position: absolute;
+	font-size: 15px;
+	opacity: 0.7;
+	color: white;
+	width: 240px; 
+	left: 35px;
+	top: 20px;
+
+}
+
+#credit{
+ text-align: right;
+ color: #ffffff;
+ font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#linkCred{
+	color: #f2ccff
+}
